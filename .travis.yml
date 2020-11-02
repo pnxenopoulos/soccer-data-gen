@@ -11,7 +11,7 @@ before_install:
     - pip install pytest
     - pip install codecov
     - pip install pytest-cov
-    - sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev libsdl2-dev -y
+    - sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev libsdl2-dev libegl1-mesa-dev -y
 
 install:
     - pip install -r requirements.txt
