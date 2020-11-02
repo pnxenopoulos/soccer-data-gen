@@ -4,7 +4,7 @@ services:
     - docker
 
 before_install:
-    - docker build -t pnxenopoulos/soccergen .
+    - docker build --build-arg DOCKER_BASE=ubuntu:18.04 --build-arg DEVICE=cpu . -t soccergen
 
 script:
     - docker ps | grep -q blog
