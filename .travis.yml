@@ -11,7 +11,11 @@ before_install:
     - pip install pytest
     - pip install codecov
     - pip install pytest-cov
-    - sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev libsdl2-dev libegl1-mesa-dev -y
+    - sudo apt-get install git cmake build-essential libgl1-mesa-dev libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev libsdl2-gfx-dev libboost-all-dev libdirectfb-dev libst-dev mesa-utils xvfb x11vnc libsdl-sge-dev
+    - python3 -m pip install --upgrade pip setuptools
+    - pip3 install tensorflow==1.15.*
+    - pip3 install dm-sonnet==1.*
+    - pip3 install git+https://github.com/openai/baselines.git@master
 
 install:
     - pip install -r requirements.txt
