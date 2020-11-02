@@ -6,7 +6,7 @@ setup(
     packages=find_packages(),
     # Project uses reStructuredText, so ensure that the docutils get
     # installed or upgraded on the target machine
-    install_requires=["gfootball>=2.28.0",],
+    install_requires=["gfootball>=2.8",],
     # metadata to display on PyPI
     author="Peter Xenopoulos",
     author_email="xenopoulos@nyu.edu",
