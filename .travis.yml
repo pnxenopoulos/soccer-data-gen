@@ -1,0 +1,26 @@
+language: python
+
+python:
+    - 3.6
+    - 3.7
+    - 3.8
+
+before_install:
+    - python --version
+    - pip install pip
+    - pip install pytest
+    - pip install codecov
+    - pip install pytest-cov
+
+install:
+    - pip install -r requirements.txt
+
+script:
+    - coverage run -m pytest
+
+after_success:
+    - coverage report -m
+    - bash <(curl -s https://codecov.io/bash)
+
+after_failure:
+    - ls
