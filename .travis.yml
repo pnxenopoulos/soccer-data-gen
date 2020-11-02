@@ -11,7 +11,6 @@ before_install:
     - pip install pytest
     - pip install codecov
     - pip install pytest-cov
-    - sudo apt-get upgrade -y
     - sudo apt-get install git cmake build-essential libgl1-mesa-dev libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev libsdl2-gfx-dev libboost-all-dev libdirectfb-dev libst-dev mesa-utils xvfb x11vnc libsdl-sge-dev
     - python3 -m pip install --upgrade pip setuptools
     - pip3 install tensorflow==1.15.*
